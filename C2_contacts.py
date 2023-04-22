@@ -142,7 +142,7 @@ if __name__ == "__main__":
     results = open('results.csv', 'w')
     results.write('pdbID,couple count\n')
 
-    with open('all_.csv', 'r') as csvf:  # csv: pdbID,start1,end1,start2,start2
+    with open('data.csv', 'r') as csvf:  # csv: pdbID,start1,end1,start2,start2
         reader = csv.DictReader(csvf)
         for row in reader:
             file_name = './files/' + row['pdbID'].split('.')[0] + ".pdb_" + row['pdbID'].split('.')[1]
