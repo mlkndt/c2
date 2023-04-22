@@ -1,5 +1,5 @@
 import csv
-from symmetry import Point, cm_module
+from C2_contacts import Point, cm_module
 
 A = []
 start_end = {}
